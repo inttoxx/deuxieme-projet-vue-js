@@ -59,7 +59,7 @@ const store = createStore({
 
 		newCategories({ state }, catName) {
 			var myHeaders = new Headers();
-			myHeaders.append("Authorization", "Basic dmFsZW50aW46UGNlZ2NlY3QyMjA5IQ==");
+			myHeaders.append("Authorization", "inserez votre auth ici");
 			myHeaders.append("Content-Type", "application/json");
 
 			const newCat = {
@@ -82,7 +82,7 @@ const store = createStore({
 
 		newPost({ state }, catId) {
 			var myHeaders = new Headers();
-			myHeaders.append("Authorization", "Basic dmFsZW50aW46UGNlZ2NlY3QyMjA5IQ==");
+			myHeaders.append("Authorization", "inserez votre auth ici");
 			myHeaders.append("Content-Type", "application/json");
 
 			const newPost = {
@@ -110,7 +110,7 @@ const store = createStore({
 
 		async newComment({ state }, postId, content) {
 			var myHeaders = new Headers();
-			myHeaders.append("Authorization", "Basic dmFsZW50aW46UGNlZ2NlY3QyMjA5IQ==");
+			myHeaders.append("Authorization", "inserez votre auth ici");
 			myHeaders.append("Content-Type", "application/json");
 
 			var raw = JSON.stringify({
@@ -133,7 +133,7 @@ const store = createStore({
 
 		updateCategories({ state }, catId, newTitle) {
 			var myHeaders = new Headers();
-			myHeaders.append("Authorization", "Basic dmFsZW50aW46UGNlZ2NlY3QyMjA5IQ==");
+			myHeaders.append("Authorization", "inserez votre auth ici");
 			myHeaders.append("Content-Type", "application/json");
 
 			var raw = JSON.stringify({
@@ -161,7 +161,7 @@ const store = createStore({
 
 		updatePosts({ state }, postId, newTitle, newContent) {
 			var myHeaders = new Headers();
-			myHeaders.append("Authorization", "Basic dmFsZW50aW46UGNlZ2NlY3QyMjA5IQ==");
+			myHeaders.append("Authorization", "inserez votre auth ici");
 			myHeaders.append("Content-Type", "application/json");
 
 			var raw = JSON.stringify({
@@ -195,7 +195,7 @@ const store = createStore({
 
 		updateComments({ state }, commId, newContent) {
 			var myHeaders = new Headers();
-			myHeaders.append("Authorization", "Basic dmFsZW50aW46UGNlZ2NlY3QyMjA5IQ==");
+			myHeaders.append("Authorization", "inserez votre auth ici");
 			myHeaders.append("Content-Type", "application/json");
 
 			var raw = JSON.stringify({
@@ -225,7 +225,7 @@ const store = createStore({
 
 		async delCategories({ state }, catId) {
             const myHeaders = new Headers();
-            myHeaders.append("Authorization", "Basic dmFsZW50aW46UGNlZ2NlY3QyMjA5IQ==");
+            myHeaders.append("Authorization", "inserez votre auth ici");
             myHeaders.append("Content-Type", "application/json");
 
             return fetch(
@@ -244,7 +244,7 @@ const store = createStore({
 
 		delPosts({ state }, postId) {
 			var myHeaders = new Headers();
-			myHeaders.append("Authorization", "Basic dmFsZW50aW46UGNlZ2NlY3QyMjA5IQ==");
+			myHeaders.append("Authorization", "inserez votre auth ici");
 
 			var raw = JSON.stringify({
 				force: "true",
@@ -264,7 +264,7 @@ const store = createStore({
 
 		delComments({ state }, commId) {
 			var myHeaders = new Headers();
-			myHeaders.append("Authorization", "Basic dmFsZW50aW46UGNlZ2NlY3QyMjA5IQ==");
+			myHeaders.append("Authorization", "inserez votre auth ici");
 
 			var raw = JSON.stringify({
 				force: "true",
